@@ -1,0 +1,465 @@
+body {
+    background-color: #cbc2bc;
+}
+
+#main-index {
+    font-family: sans-serif;
+    font-size: 10px;
+
+    h1 {
+        background-color: deeppink;
+        font-family: $marcellus;
+        color: #f0f8ff;
+        margin: 5px 0;
+    }
+
+    .titulo {
+        padding: 10px;
+        border-radius: 15px;
+        margin: 0 0 50px;
+    }
+
+    .desayuno {
+        margin: 0px 0px 15px;
+        padding: 10px;
+        border-radius: 15px;
+
+    }
+
+    .cakeshop {
+        padding: 5px;
+        margin: 0 5px 0px;
+        border-radius: 15px;
+    }
+
+}
+
+.Quienes_Somos {
+    padding-top: 90px;
+}
+
+.container_quienes_somos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 20px;
+    background-color: hsl(310, 3%, 59%);
+    border-radius: 15px;
+}
+
+.texto_quienes_somos h2 {
+    font-family: $merriweather;
+    font-size: 45px;
+    background-color: hsl(310, 3%, 59%);
+    margin-bottom: 0;
+    padding-bottom: 3rem;
+}
+
+.parrafo {
+    font-family: $marcellus;
+    font-size: 20px;
+    background-color: hsl(310, 3%, 59%);
+    margin-bottom: 0;
+    padding-bottom: 3rem;
+}
+
+
+.foto_Romi {
+    width: 500px;
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+.informacion_local {
+    padding-top: 5rem;
+
+}
+
+.info_local {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 0 5px;
+    background-color: #f7f3f0ee;
+}
+
+.info_local {
+    display: flex;
+    text-align: center;
+    margin: 20px 20px;
+    background-color: #f7f3f0ee;
+    color: rgba(140, 137, 137, 0.903);
+    background-color: #cbc2bc;
+    padding: 20px;
+    border: none
+}
+
+.container i {
+    font-size: 3rem;
+    margin-right: 15px;
+}
+
+.container h3 {
+    font-size: 1.5rem;
+}
+
+.container p {
+    font-size: 1.1rem;
+    color: #6c6c6c;
+}
+
+.Tortas_Sabores {
+    padding-top: 90px;
+}
+
+.container_sabores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 20px;
+    background-color: hsl(310, 3%, 59%);
+    border-radius: 15px;
+
+    .sabores h2 {
+        font-family: $merriweather;
+        font-size: 35px;
+        padding-right: 3rem;
+        background-color: hsl(310, 3%, 59%);
+        margin-bottom: 0;
+        padding-bottom: 3rem;
+
+        .sabores .parrafo {
+            font-family: $marcellus;
+            font-size: 10px;
+            background-color: hsl(310, 3%, 59%);
+            margin-bottom: 0;
+            padding-bottom: 3rem;
+        }
+    }
+}
+
+.foto_sabores {
+    width: 450px;
+    border-radius: 10px;
+}
+
+.postres_listos {
+    padding: 20px;
+    padding-left: 30px;
+    margin: 15px 0px;
+    font-size: 20px;
+    font-family: $marcellus;
+    font-weight: bolder;
+
+}
+
+.container-fotos {
+    width: 880px;
+    margin: auto;
+    text-align: center;
+    $card-height: 100%;
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .card:hover {
+        transform: scale(1.1);
+        transition: all .2s;
+
+    }
+}
+
+.container-desayunos {
+    width: 880px;
+    margin: auto;
+    text-align: center;
+    padding-top: 3rem;
+    $card-height: 100%;
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .card:hover {
+        transform: scale(1.1);
+        transition: all .2s;
+    }
+}
+
+.container-tortas {
+    display: grid;
+    padding: 5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    justify-items: center;
+}
+.torta_imagen{
+    max-width: 100%;
+    border-radius: 1rem;
+}
+.torta_detalles{
+    background-color:#C78283;
+    color: #090909;
+    border-radius: 1rem;
+    padding: .5rem;
+    margin-top: -0.7rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.torta_titulo{
+    font-size:1.5rem ;
+    text-align: right;
+}
+
+.agregar_producto{
+    border:0;
+    background-color:#cbc2bc;
+    color: #090909;
+    padding: .5rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: 2px solid rgb(121, 119, 119);
+    transition: background-color .2s, color .2s;
+}
+.agregar_producto:hover{
+background-color:#969696 ;
+color:azure;
+}
+
+
+.torta_precio{
+    text-align: right;
+    font-size: 1rem;
+}
+
+.shadow-drop-2-center:hover {
+    -webkit-animation: shadow-drop-2-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-2-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+.Recetas {
+    padding: 10px;
+    border-radius: 15px;
+    margin: 0 0 50px;
+}
+
+.video-recetario {
+    display: grid;
+    padding: 80px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    justify-items: center;
+    justify-content: center;
+
+}
+
+.shadow-drop-right {
+    border-radius: 2rem;
+}
+
+.shadow-drop-right:hover {
+    -webkit-animation: shadow-drop-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.sabias_que {
+
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.container_sabias_que {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 20px;
+    background-color: hsl(310, 3%, 59%);
+    border-radius: 15px;
+}
+
+.sabias h2 {
+    font-family: $merriweather;
+    margin-right: 20px;
+    font-size: 45px;
+    background-color: hsl(310, 3%, 59%);
+    margin-bottom: 0;
+    padding-bottom: 3rem;
+}
+
+.parrafo_sabias {
+
+    font-family: $marcellus;
+    font-size: 30px;
+    background-color: hsl(310, 3%, 59%);
+    margin-right: 20rem;
+    margin-bottom: 0;
+    padding-bottom: 3rem;
+}
+
+
+.foto_sabias {
+    width: 450px;
+    border-radius: 15px;
+
+}
+
+.foto-local {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    padding-top: 20px;
+
+}
+
+.como-llegar {
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px 0 0 0;
+    padding-left: 30px;
+    padding-top: 50px;
+    height: auto;
+}
+
+.horarios {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 50px;
+    margin: auto;
+    max-width: fit-content;
+
+    h2 {
+        font-family: $marcellus;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    h3 {
+        padding-top: 20px;
+        font-family: $marcellus;
+        font-size: 22px;
+    }
+
+    p {
+        font-family: $marcellus;
+        font-size: 15px;
+        margin: 1px;
+    }
+
+    h4 {
+        padding-top: 30px;
+        font-family: $marcellus;
+        font-size: 22px;
+    }
+}
+
+.container-map {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container-encontranos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.redes {
+
+    padding-left: 80px;
+
+    p {
+        font-family: $marcellus;
+        font-size: 20px;
+        text-align: justify;
+        margin: 1px;
+        padding-left: 40px;
+
+    }
+}
+
+.formulario_de_suscripcion {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    form {
+        width: 350px;
+        height: 300px;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        h5 {
+            font-family: $marcellus;
+            font-size: 20px;
+            text-align: center;
+            color: #0e0d0d;
+            margin: 0 0 10px 0;
+        }
+
+        p {
+            font-size: 18px;
+            font-family: $marcellus;
+            text-align: center;
+            color: #777;
+            margin: 0 0 20px 0;
+        }
+
+        .inputext {
+            margin: 15px 0;
+            padding: 17px 25px;
+            outline: none;
+            background: #fff;
+            border: 1px solid #969696;
+            border-radius: 13px;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .form__btn {
+            padding: 5px 10px;
+            ;
+            border-radius: 5px;
+            background: #C78283;
+            border: 2px solid #C78283;
+            color: #fff;
+            font-size: 10px;
+            margin: 0;
+            transition: all .42s ease;
+            cursor: pointer;
+        }
+
+        .form__btn:hover {
+            border: 2px solid #C78283;
+            background: #fff;
+            color: #C78283;
+            transition: all .42s ease;
+        }
+    }
+}

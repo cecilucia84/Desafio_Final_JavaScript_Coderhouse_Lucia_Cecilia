@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "titulo": "Chocotorta",
+        "precio": 3500,
+        "imagen": "../recursos/chocotorta.jpg"
+    },
+    {
+        "id": 2,
+        "titulo": "Torta Cono",
+        "precio": 4000,
+        "imagen": "../recursos/Romi con torta cono.webp"
+    },
+    {
+        "id": 3,
+        "titulo": "Princess Cake",
+        "precio": 4500,
+        "imagen": "../recursos/Romi con torta princesa.jpg"
+    },
+    {
+        "id": 4,
+        "titulo": "Donuts Cake",
+        "precio": 4500,
+        "imagen": "../recursos/Torta Donuts.webp"
+    },
+    {
+        "id": 5,
+        "titulo": "Letter Cake",
+        "precio": 4000,
+        "imagen": "../recursos/Torta Letra.webp"
+    },
+    {
+        "id": 6,
+        "titulo": "Ball Cake",
+        "precio": 4500,
+        "imagen": "../recursos/Torta pelotas de colores.webp"
+    }
+]

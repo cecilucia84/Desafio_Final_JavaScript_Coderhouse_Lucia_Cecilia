@@ -1,0 +1,225 @@
+@media screen and (min-width: 770px) {
+    .carousel {
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .carousel {
+        max-width: 2000px;
+
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+    .carousel {
+        gap: 0px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .carousel {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1080px) {
+
+    .nav {
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        background-color: #cbc2bc;
+        padding: 0 5%;
+        height: 100px;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    .nav {
+        height: auto;
+    }
+
+    .nav ul {
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (max-width:770px) {
+    .h1 {
+        font-family: sans-serif;
+        font-size: 10px;
+        max-width: 750px;
+        margin: 5px 0;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #main-index {
+        font-family: sans-serif;
+        font-size: 10px;
+        max-width: 1050px;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #main-index {
+        font-family: sans-serif;
+        font-size: 10px;
+        max-width: 770px;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .container_quienes_somos {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 770px) {
+    .container-fotos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: auto;
+        margin:auto;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .container-tortas {
+        width: auto;
+        margin:auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }}
+
+@media screen and (max-width: 770px) {
+    .container_sabores {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .container-desayunos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: auto;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .video-recetario {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .container_sabias_que {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .container-map {
+        flex-direction: column;
+        margin: auto;
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .como-llegar {
+       width:100%;
+       height: auto;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .horarios {
+        flex-direction: column;
+        margin: auto;
+        height: auto;
+        padding: 5rem;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .container-encontranos {
+        flex-direction: column-reverse;
+        min-width: 0px;
+        margin: auto;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .formulario_de_suscripcion {
+        flex-direction: column;
+        min-width:0px;
+        width: auto;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .redes {
+        flex-direction: column;
+        margin: auto;
+        height: auto;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .foto-local {
+        flex-direction: column;
+        margin: auto;
+        padding-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .footer {
+        flex-direction: column;
+        font-family: $roboto-mono;
+        font-size: 10px;
+        max-width: 770px;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .logo_alta_pinta {
+        flex-direction: column;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 770px) {
+.icono_whatsapp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+}}

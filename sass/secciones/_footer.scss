@@ -1,0 +1,44 @@
+.footer {
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    padding-top: 8rem;
+    padding-left: 12rem;
+    font-size: bold;
+    font-family: $roboto-mono;
+
+    p {
+        margin-bottom: 0;
+        display: contents;
+    }
+}
+
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #069734;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba (0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.btn-wsp:hover {
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+}
+
+.logo_alta_pinta {
+    position: absolute;
+    width: auto;
+    left: 4%;
+    top: 2%;
+}

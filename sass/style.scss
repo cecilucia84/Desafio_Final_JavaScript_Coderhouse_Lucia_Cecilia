@@ -1,0 +1,20 @@
+@import "./assets/variables.scss";
+@import "./assets/animaciones.scss";
+
+@import "./assets/typografy.scss";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+@import "./assets/reset";
+
+
+@import "./secciones/header";
+
+@import "./secciones/main";
+
+@import "./secciones/footer";
+
+@import "./secciones/carrito";
+
+@import "./assets/mediaqueries";
