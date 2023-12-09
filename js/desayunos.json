@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "titulo": "Desayuno - Dia del Padre",
+      "imagen": "../recursos/desayuno.jpg",
+      "descripcion": "Dale una sorpresa a papá en su día! Tenemos las mejores opciones para vos",
+      "precio": 3500
+    },
+    {
+      "id": 2,
+      "titulo": "Desayuno Día de la Madre",
+      "imagen": "../recursos/desayuno dia de la madre.jpg",
+      "descripcion": "Tenemos todo lo ideal para que puedas darle la mejor sorpresa a mamá en su idea",
+      "precio": 3500
+    },
+    {
+      "id": 3,
+      "titulo": "Sweet box",
+      "imagen": "../recursos/desayuno3.jpg",
+      "descripcion": "Con todo lo mejor para que puedas sorprender a quien quieras!",
+      "precio": 4000
+    },
+    {
+      "id": 4,
+      "titulo": "Sweet Box Premium",
+      "imagen": "../recursos/desayuno4.jpg",
+      "descripcion": "Elegi todo lo que quieras sumar a tu sorpresa para festejar un hermoso momento!",
+      "precio": 6000
+    },
+    {
+      "id": 5,
+      "titulo": "Sweet Box",
+      "imagen": "../recursos/desayuno5.jpg",
+      "descripcion": "Podes armarla como te guste!",
+      "precio": 4500
+    },
+    {
+      "id": 6,
+      "titulo": "Sweet Box",
+      "imagen": "../recursos/desayuno1.jpg",
+      "descripcion": "Desayuno completo con infusiones y todo lo que quieras agregar a tu gusto!",
+      "precio": 5000
+    }
+  ]
