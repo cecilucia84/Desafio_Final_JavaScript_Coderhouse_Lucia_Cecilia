@@ -9,7 +9,7 @@ const contenedorTotal = document.querySelector("#total");
 const botonComprar = document.querySelector("#carrito_acciones_comprar");
 
 function resetearCarrito() {
-    let totalProductos = productosEnCarrito.reduce((acc, torta) => acc + torta.cantidad, 0);
+    let totalProductos = CakeEnCarrito.reduce((acc, torta) => acc + torta.cantidad, 0);
 
     Swal.fire({
         title: "¿Estás Seguro? 😯",
@@ -62,20 +62,24 @@ if (CakeEnCarrito.length > 0) {
                 <small>Subtotal</small>
                 <p>$${torta.PRECIO * torta.cantidad}</p>
             </div>
-            <button class="carrito_producto_eliminar" id=${torta.id}><i class="bi bi-trash3-fill"></i></button>
+            <button class="carrito_producto_eliminar" id="eliminar-${torta.id}"><i class="bi bi-trash3-fill"></i></button>
         </div>`;
         contenedorCarritoProductos.appendChild(div);
+
+
+        div.querySelector(".carrito_producto_eliminar").addEventListener("click", eliminarDelCarrito);
     });
-    actualizarBotonesEliminar();
 }
 
 function eliminarDelCarrito(e) {
-    const uniqueID = e.currentTarget.id;
+    const uniqueID = e.currentTarget.id.replace("eliminar-", "");
     const index = CakeEnCarrito.findIndex(torta => String(torta.id) === uniqueID);
     if (index !== -1) {
         CakeEnCarrito.splice(index, 1);
     }
     localStorage.setItem("productos_en_carrito", JSON.stringify(CakeEnCarrito));
+
+    e.currentTarget.parentElement.remove();
 
     Toastify({
         text: "Producto eliminado del carrito 😢",
@@ -83,20 +87,18 @@ function eliminarDelCarrito(e) {
         destination: "./carrito.html",
         newWindow: true,
         close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true,
         style: {
             background: "linear-gradient(to right, RGB(245 104 247), RGB(245 162 246))",
             borderRadius: "2rem",
             fontFamily: "Marcellus"
         },
-        onClick: function () { } // Callback after click
+        onClick: function () { }
     }).showToast();
 
-    setTimeout(function () {
-        location.reload();
-    }, 900);
+    actualizarTotal();
 }
 
 function actualizarBotonesEliminar() {
@@ -132,11 +134,11 @@ document.addEventListener("DOMContentLoaded", function () {
 function comprarCarrito() {
     Swal.fire({
         title: "Muchas Gracias por comprar en Tres Tartas! 😊❤️ ",
-        text: "Te enviaremos un mail con la confirmación de tu compra",
+        text: "Te enviaremos un correo electrónico con la confirmación de tu compra",
         imageUrl: "../recursos/TRES TARTAS - BANNER (comprimido).png",
         imageWidth: 400,
         imageHeight: 200,
-        imageAlt: "Custom image"
+        imageAlt: "Imagen personalizada"
     });
 
     localStorage.setItem("productos_en_carrito", JSON.stringify([]));
