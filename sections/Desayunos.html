@@ -7,6 +7,8 @@
   <script src="https://kit.fontawesome.com/8f5c9daf85.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <meta name="keywords" content="tres tartas, pasteleria, bakery, desayunos, postres, sorpresa, regalo, bandeja,box">
   <meta name="description"
     content="En Tres Tartas preparamos los mejores gift boxes y desayunos para que puedas regalar un momento único">
@@ -56,6 +58,9 @@
         <li><a href="./Desayunos.html">Desayunos</a></li>
         <li><a href="./Recetario.html">Recetario</a></li>
         <li><a href="./Contactanos.html">Contactanos</a></li>
+        <div class="nav__icon">
+          <a href="./carrito.html"><i class="bi bi-basket2"></i><span id="numerito" class="numerito">0</span></a>
+      </div>
         <div class="container__search">
           <form action="#">
             <input type="search" placeholder="Buscá qué te tienta...">
@@ -73,62 +78,9 @@
     <h1 class="desayuno">Nuestros Desayunos especiales para vos...</h1>
 
     <div class="container-desayunos">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card">
-            <img src="../recursos/desayuno.jpg" class="card-img-top" alt="desayuno">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Desayuno - Dia del Padre</h5>
-              <p class="card-text">Dale una sorpresa a papá en su día! Tenemos las mejores opciones para vos</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="../recursos/desayuno dia de la madre.jpg" class="card-img-top" alt="desayuno dia de la madre">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Desayuno Día de la Madre</h5>
-              <p class="card-text">Tenemos todo lo ideal para que puedas darle la mejor sorpresa a mamá en su idea</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="../recursos/desayuno3.jpg" class="card-img-top" alt="desayuno3">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Sweet box</h5>
-              <p class="card-text">Con todo lo mejor para que puedas sorprender a quien quieras!</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="../recursos/desayuno4.jpg" class="card-img-top" alt="desayuno4">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Sweet Box Premium</h5>
-              <p class="card-text">Elegi todo lo que quieras sumar a tu sorpresa para festejar un hermoso momento!.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="../recursos/desayuno5.jpg" class="card-img-top" alt="desayuno5">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Sweet Box</h5>
-              <p class="card-text">Podes armarla como te guste!</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="../recursos/desayuno1.jpg" class="card-img-top" alt="desayuno1">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Sweet Box</h5>
-              <p class="card-text"> Desayuno completo con infusiones y todo lo que quieras agregar a tu gusto!</p>
-            </div>
-          </div>
-        </div>
-      </div>
+         <!-- Esto se va a rellenar con JS -->
+    </div>
+    
 
 
   </main>
@@ -162,6 +114,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
     crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script defer src="../js/main.js"></script>
+    <script defer src="../js/desayunos.js"></script>
+    <script defer src="../js/carrito.js"></script>
+
 
 </body>
 

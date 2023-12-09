@@ -12178,6 +12178,12 @@ body {
   margin: auto;
   text-align: center;
   padding-top: 3rem;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px 10px;
+  grid-auto-flow: row;
+  justify-items: center;
 }
 .container-desayunos .card p {
   font-size: 12px;

@@ -19,13 +19,13 @@ function resetearCarrito() {
         showCancelButton: true,
         focusConfirm: false,
         confirmButtonText: `Si`,
-        cancelButtonText:  `No`,
+        cancelButtonText: `No`,
     }).then((result) => {
         if (result.isConfirmed) {
             localStorage.clear();
             contenedorCarritoProductos.classList.add("disabled");
             contenedorCarritoAcciones.classList.add("disabled");
-            contenedorTotal.classList.add("disabled"); 
+            contenedorTotal.classList.add("disabled");
             contenedorCarritoVacio.classList.remove("disabled");
 
             Swal.fire("Carrito vaciado!", "", "success");
@@ -70,17 +70,13 @@ if (CakeEnCarrito.length > 0) {
 }
 
 function eliminarDelCarrito(e) {
-    const uniqueID = e.currentTarget.id; 
-    let found = false;
-    const nuevosProductos = CakeEnCarrito.filter((torta) => {
-        if (String(torta.id) !== uniqueID || found) {
-            return true;
-        }
-        found = true;
-        return false;
-    });
-    localStorage.setItem("productos_en_carrito", JSON.stringify(nuevosProductos));
-    
+    const uniqueID = e.currentTarget.id;
+    const index = CakeEnCarrito.findIndex(torta => String(torta.id) === uniqueID);
+    if (index !== -1) {
+        CakeEnCarrito.splice(index, 1);
+    }
+    localStorage.setItem("productos_en_carrito", JSON.stringify(CakeEnCarrito));
+
     Toastify({
         text: "Producto eliminado del carrito 😢",
         duration: 3000,
@@ -91,16 +87,16 @@ function eliminarDelCarrito(e) {
         position: "right", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
-          background: "linear-gradient(to right, RGB(245 104 247), RGB(245 162 246))",
-          borderRadius: "2rem",
-          fontFamily:"Marcellus"
+            background: "linear-gradient(to right, RGB(245 104 247), RGB(245 162 246))",
+            borderRadius: "2rem",
+            fontFamily: "Marcellus"
         },
-        onClick: function(){} // Callback after click
+        onClick: function () { } // Callback after click
     }).showToast();
-    
-    setTimeout(function() {
+
+    setTimeout(function () {
         location.reload();
-    }, 900); 
+    }, 900);
 }
 
 function actualizarBotonesEliminar() {
@@ -127,7 +123,7 @@ if (botonVaciar) {
     });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     if (botonComprar) {
         botonComprar.addEventListener("click", comprarCarrito);
     }
@@ -141,11 +137,11 @@ function comprarCarrito() {
         imageWidth: 400,
         imageHeight: 200,
         imageAlt: "Custom image"
-      });
+    });
 
     localStorage.setItem("productos_en_carrito", JSON.stringify([]));
     contenedorCarritoProductos.classList.add("disabled");
     contenedorCarritoAcciones.classList.add("disabled");
-    contenedorTotal.classList.add("disabled"); 
+    contenedorTotal.classList.add("disabled");
     contenedorCarritoComprado.classList.remove("disabled");
 }

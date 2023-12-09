@@ -10,11 +10,11 @@ class TiendaTortas {
 let arrayTortas = [];
 
 fetch("../js/tortas.json")
-.then(response => response.json())
-.then(data => {
-    arrayTortas = data.map(torta => new TiendaTortas(torta.id, torta.titulo, torta.precio, torta.imagen));
-    cargarProductos(arrayTortas)
-})
+    .then(response => response.json())
+    .then(data => {
+        arrayTortas = data.map(torta => new TiendaTortas(torta.id, torta.titulo, torta.precio, torta.imagen));
+        cargarProductos(arrayTortas)
+    })
 
 
 const containerTortas = document.querySelector("#container-tortas");
@@ -72,12 +72,12 @@ function agregarAlCarrito(event) {
         position: "right", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
-          background: "linear-gradient(to right, RGB(245 104 247), RGB(245 162 246))",
-          borderRadius: "2rem",
-          fontFamily:"Marcellus"
+            background: "linear-gradient(to right, RGB(245 104 247), RGB(245 162 246))",
+            borderRadius: "2rem",
+            fontFamily: "Marcellus"
         },
-        onClick: function(agregarAlCarrito){} // Callback after click
-      }).showToast();
+        onClick: function (agregarAlCarrito) { } // Callback after click
+    }).showToast();
 
     const productId = parseInt(event.target.id);
     const cantidadInput = document.getElementById(`cantidad-${productId}`);
@@ -88,16 +88,16 @@ function agregarAlCarrito(event) {
     if (productoAgregado && cantidad >= 1) {
         const productoConCantidad = { ...productoAgregado, cantidad };
         productosEnCarrito.push(productoConCantidad);
-    
+
         actualizarNumerito();
-        
+
         localStorage.setItem("productos_en_carrito", JSON.stringify(productosEnCarrito));
-    } 
+    }
 }
 
 function actualizarNumerito() {
     const numerito = document.getElementById("numerito");
-    
+
     let totalCantidad = productosEnCarrito.reduce((acc, torta) => acc + torta.cantidad, 0);
     numerito.innerText = totalCantidad;
 }
